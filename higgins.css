@@ -13,7 +13,6 @@ a,a:visited,a:hover,a {
 
 .slide {
 	display:none;
-	height:calc(100% -30px);
 }
 
 .container {               
@@ -25,6 +24,7 @@ a,a:visited,a:hover,a {
 .notes { 
 	display:none;
 }
+
 blockquote {
     background-color: rgba(60,60,60,0.5);
     padding: 0em 1em 0.2em 40px;
@@ -58,7 +58,7 @@ p {
 
 .kapow ,.lesson{ 
 	background-color:#000; 
-	color: #F00 
+	color: #F00;
 }
 
 #noteDetail, #notes {
