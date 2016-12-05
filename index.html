@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<title>higgins presenter</title>
+<meta name="viewport" content="height=device-height,width=device-width" />
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+<script type="text/javascript" src="js/JQuery.js"></script>
+<script type="text/javascript" src="js/higgins.js"></script>
+<script type="text/javascript" src="js/commonmark.js"></script>
+<link rel="stylesheet" type="text/css" href="higgins.css">
+</head><body>
+<div id='noteDetail'></div><div id='notes' onclick='showNotes();'>n</div><div id='num'>#0</div>
+<!-- The higgins slide presenter, MIT license, by Leon Bambrick, http://secretGeek.net -->
+<!-- Get your own higgins from https://github.com/secretGeek/higgins/ -->
+<div class='container'> <!-- slides go inside this container. -->
+<!-- Put your collection of slides here... -->
+
+<div class='slide'>
+
+<img src='image/higgins_logo.png' alt='higgins logo' title='higgins logo' />
+
+<p>This is higgins. It is a simple slide viewer.</p>
+<p>Press space to go to the next slide.</p>
+<p>(And hit F11 to go full screen)</p>
+</div>
+
+<div class='slide'>
+<p>Write your slides in plain Html (or markdown).</p>
+<p>You can also use the arrow keys to move forward or backward.</p>
+<p>Move forward now. &raquo;</p>
+</div>
+
+<div class='slide'>
+<p>Each slide is a <code>div</code> with a class of <code>slide</code>.</p>
+<p>They look like this:</p>
+<blockquote style='text-align:left'>
+&nbsp; &nbsp; &lt;div class='slide'&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;This is a simple slide viewer.&lt;/p&gt;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Press space to go to the next slide.&lt;/p&gt;<br />
+&nbsp; &nbsp; &lt;/div&gt;
+</blockquote> 
+</div>
+
+<div class='slide md'>
+
+# Or use Markdown
+
+You can also write your slides in markdown.
+
+Just include an "`md`" class on any slide, and it will be converted to HTML on the fly.
+
+</div>
+
+
+
+<div class='slide kapow'>
+ <p>Add css classes to your slides<br />
+ to change their colors.</p>
+</div>
+
+<div class='slide'>
+ <p>You can include notes with any slide.<br />
+ See that little 'n' in the top right?<br />
+ click that to show the notes for a slide.</p>
+
+<span class='notes'>
+<p>Notes are shown in a smaller font as they are really for the benefit of the presenter not the audience.</p>
+<p>They can be a helpful cue for what to say on each slide.</p>
+<p>To include notes for a slide, just include an element (such as a span) with a class of notes. Notes are hidden by default.</p>
+<p>Click the 'n' again to hide the notes. (Or just move to the next slide.)</p></span>
+
+</div>
+
+<div class='slide md'>
+
+* Notes can also be written in markdown.
+
+* Include an "`md`" class on the .notes span.
+
+<span class='notes md'>
+
+* this note is written in *markdown*
+
+* higgins uses 'commonMark'
+
+</span>
+</div>
+
+
+<div class='slide md'>
+
+You can include **images** if you like that sort of thing
+
+![chicken](image/CvO6ABYUIAEKefG.jpg)
+
+I tend to put the images in the `image` subfolder. But it's up to you.
+
+</div>
+
+<div class='slide'>
+<p>I built this tool for a talk at 'Brisbane Alt.net'</a>.</p>
+<p>I didn't have powerpoint on my netbook, and wanted to be able to write the slides while on the bus.</p>
+</div>
+
+<div class='slide md'>
+
+I've subsequently used it for talks at the Brisbane .net user group, WDCNZ (Web Developer Conf New Zealand) and DDD Brisbane.
+
+I like using it. I make little improvements each time.
+
+</div>
+
+<div class='slide md'>
+
+To use higgins in your own talk, just fork this repository, and edit the file 'index.html'
+
+That's all there is to it.
+
+
+</div>
+
+<div class='slide md'>
+
+When you're finished: 
+
+You can make the slides available on line through the magic of 'github pages'
+
+</div>
+
+<div class='slide md'>
+
+
+To do this, go into the settings of your repository...
+
+![settings](image/settings.png)
+
+Yes that one!
+
+</div>
+
+<div class='slide md'>
+
+Scroll down to the section headed **GitHub Pages**
+
+![settings](image/settings_gh.png)
+
+Check the "master branch" and click "Save"
+
+
+</div>
+
+<div class='slide md'>
+
+Then github will tell you the url at which you can browse your slides...
+
+![settings](image/settings_gh1.png)
+
+
+It will be:
+
+`https://{YourUserName}.github.io/{YourProject}/`
+
+
+</div>
+
+<div class='slide md'>
+
+I also recommend using ZoomIt from sysinternals. For Zooming, but also for drawing on the screen.
+
+And bignote is a tool from Joseph Cooney that is useful in talks.
+
+BigNote let's you write gigantic text on the screen.
+
+One of those laser pointers would be a good thing to have also. 
+
+</div>
+
+<div class='slide md'>
+
+![oh boy](image/Oh_Boy.gif)
+
+One more thing...
+
+The slide number, at the top left, is a hyperlink.
+
+It lets you deep-link into any slide.
+
+</div>
+
+<!-- //spare slide with notes...
+<div class='slide'>
+<p></p>
+<span class='notes'>
+<p></p>
+</span>
+</div>
+
+// spare slide without notes...
+<div class='slide'>
+<p></p>
+</div>
+
+<blockquote><pre>
+</pre></blockquote>
+
+
+
+-->
+
+</body>
+</html>

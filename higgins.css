@@ -1,0 +1,122 @@
+* { padding:0px; margin:0px;}
+
+html,body { 
+	font-family:Calibri, Arial, Helvetica, "sans-serif", "Comic Sans MS"; 
+	text-align:center; 
+	font-size:32pt;
+	color:#222;
+	height:100%;
+}
+a,a:visited,a:hover,a {
+    color:dodgerblue;
+}
+
+.slide {
+	display:none;
+	height:calc(100% -30px);
+}
+
+.container {               
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.notes { 
+	display:none;
+}
+blockquote {
+    background-color: rgba(60,60,60,0.5);
+    padding: 0em 1em 0.2em 40px;
+    margin-top:20px;
+    border-top:3px solid rgba(238,238,238,0.5);
+    border-bottom:3px solid rgba(238,238,238,0.5);
+    color:#FFF;
+}
+.bord { 
+    border: 1px solid #888; 
+}
+pre {
+	text-align: left;
+	font-size:24pt
+}
+p { 
+	margin-top:0px;
+}
+#num a , #speaker{
+	color:#BBB;
+	float:left;
+	padding-left:10px;
+	text-decoration:none;
+}	
+
+#notes {
+   float:right;
+   color:#555;
+   cursor:pointer;   
+}
+
+.kapow ,.lesson{ 
+	background-color:#000; 
+	color: #F00 
+}
+
+#noteDetail, #notes {
+    display:none;
+}
+
+#noteDetail{
+    font-size:small;
+    background-color:#FFD;
+    color:#333;
+    border-bottom:1px solid #888;
+    width:100%;
+    text-align:left;
+    padding:5px;
+}
+
+/* added for DDD talk */
+
+img.cover {
+ display: block;  
+ width: 100vw;  
+ object-fit: cover;
+}
+
+table.compare {
+    font-size:22pt;
+}
+table.compare  td, table.compare  th{
+ border:1px solid #CCC;
+}
+
+table.compare { margin-left:20px;border:1px solid #CCC;padding:5px;border-collapse:collapse; margin: 0px auto;}
+table.compare th { text-align: center;padding:5px;background:rgba(0,0,0,0.5);}
+table.compare td {padding:5px;}
+table.compare tr:nth-child(odd) {
+
+background:rgba(68,68,68,0.5);
+}
+
+.dark {
+ background-color:#222;
+}
+
+h1 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 3em;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:200;
+    font-variant: small-caps;
+    letter-spacing:0.2em;
+    padding-top:10px;
+}
+
+ul {
+    text-align: left;
+    margin-left: 2em;
+}
